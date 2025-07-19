@@ -1,47 +1,90 @@
-body{
-    background-image: url('station.jpeg');
-    background-size: cover;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    overflow-y: hidden;
+body {
+  background-image: url("station.jpg");
+  background-size: cover;
+  background-image: no-repeat;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow-y: hidden;
+  color: white;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h1{
-    margin: 10px 0;
+h1 {
+  margin: 10px 0;
 }
-h2{
-    font-size: 50px;
-    margin-top: 0 ;
-    margin-bottom:  20px;
 
+h2 {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.control {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px; /* adjust as needed */
+  justify-content: center;
+  gap: 15px;
 }
 
 button {
-    border: none;
-    border-radius: 10px;
-    padding: 15px 30px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+  flex: 1 1 45%;
+  min-width: 140px;
+  box-sizing: border-box;
 }
 
 .control #btnInc {
-    background-color:green; /* better green */
+  background-color: darkgreen; /* green */
 }
 
 .control #btnDec {
-    background-color:#c82333  ; /* better red */
+  background-color: darkred; /* red */
 }
 
 .control #btnInc:hover {
-    background-color: darkgreen;
+  background-color: rgb(1, 48, 1); /* dark green */
 }
 
 .control #btnDec:hover {
-    background-color: darkred;
+  background-color: #65040e; /* dark red */
+}
+
+#btnSave {
+  background-color: gray;
+  color: white;
+}
+
+#btnSave:hover {
+  background-color: #555;
+}
+
+#btnReset {
+  background-color: #007bff; /* bootstrap blue */
+  color: white;
+}
+
+#btnReset:hover {
+  background-color: #0056b3;
+}
+p {
+  font-size: 20px;
+  margin: 10px 0;
+  color: white;
 }
