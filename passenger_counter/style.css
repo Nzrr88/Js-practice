@@ -1,0 +1,47 @@
+body{
+    background-image: url('station.jpeg');
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+h1{
+    margin: 10px 0;
+}
+h2{
+    font-size: 50px;
+    margin-top: 0 ;
+    margin-bottom:  20px;
+
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.control #btnInc {
+    background-color:green; /* better green */
+}
+
+.control #btnDec {
+    background-color:#c82333  ; /* better red */
+}
+
+.control #btnInc:hover {
+    background-color: darkgreen;
+}
+
+.control #btnDec:hover {
+    background-color: darkred;
+}
